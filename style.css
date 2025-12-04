@@ -449,7 +449,7 @@ box-shadow: 0 15px 25px #00000022;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO CONTATO */
 @media (max-width: 980px) {
   .contato {
     padding: 60px 30px 80px;
@@ -465,5 +465,381 @@ box-shadow: 0 15px 25px #00000022;
   }
   .contato-titulo {
     font-size: 30px;
+  }
+}
+
+/* 4 PARTE – NOSSA HISTÓRIA */
+
+.historia {
+  background-color: #F9F6F0;
+  padding: 80px 60px;
+}
+
+.historia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.historia-texto {
+  flex: 1.4;
+}
+
+.historia-label {
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.35em;
+  font-size: 13px;
+  color: #8C7A67;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.historia h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  color: #433023;
+  margin-bottom: 16px;
+}
+
+.historia-texto p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
+  color: #7B6A59;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.historia-card {
+  flex: 1;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  border: 1px solid #F1E4D8;
+  padding: 32px 32px 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  font-family: "Source Sans 3", sans-serif;
+  color: #7B6A59;
+}
+
+.historia-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #433023;
+  margin-bottom: 10px;
+}
+
+.historia-card p {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.historia-pill {
+  background-color: #FFF6EC;
+  border-radius: 18px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.historia-pill strong {
+  display: block;
+  color: #99431E;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.historia-pill span {
+  font-size: 14px;
+}
+
+/* 5 PARTE – HORÁRIOS */
+
+.horarios {
+  background-color: #FBF4EB;
+  padding: 80px 60px 90px;
+}
+
+.horarios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.horarios-label {
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.35em;
+  font-size: 13px;
+  color: #8C7A67;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.horarios h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #433023;
+  margin: 0 0 10px;
+}
+
+.horarios-sub {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  color: #7B6A59;
+  max-width: 640px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.dia-card {
+  background-color: #FFFFFF;
+  border-radius: 26px;
+  border: 1px solid #F1E4D8;
+  padding: 22px 26px 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.dia-card h4 {
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #A48463;
+  margin: 0 0 6px;
+}
+
+.dia-card strong {
+  display: block;
+  font-size: 18px;
+  color: #433023;
+  margin-bottom: 6px;
+}
+
+.dia-card p {
+  font-size: 14px;
+  color: #7B6A59;
+  line-height: 1.6;
+}
+
+/* 6 PARTE – CARDÁPIO */
+
+.cardapio {
+  background-color: #F9F6F0;
+  padding: 80px 60px 100px;
+}
+
+.cardapio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardapio-label {
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.35em;
+  font-size: 13px;
+  color: #8C7A67;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cardapio h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #433023;
+  margin: 0 0 10px;
+}
+
+.cardapio-sub {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  color: #7B6A59;
+  max-width: 650px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+/* tabs dias */
+.cardapio-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.cardapio-tabs button {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  border-radius: 999px;
+  border: 1px solid #E7D8C8;
+  padding: 8px 18px;
+  background-color: #FFF;
+  color: #7B6A59;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.cardapio-tabs button:hover {
+  background-color: #FDE3BF;
+  color: #433023;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+/* Card prato */
+
+.cardapio-card {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  border: 1px solid #F1E4D8;
+  padding: 24px 26px;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.06);
+}
+
+.cardapio-texto {
+  flex: 1;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.cardapio-chip {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #A48463;
+  margin-bottom: 6px;
+}
+
+.cardapio-texto h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #99431E;
+  margin: 0 0 8px;
+}
+
+.cardapio-texto p {
+  font-size: 15px;
+  color: #7B6A59;
+  line-height: 1.7;
+}
+
+.cardapio-preco {
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #99431E;
+}
+
+.cardapio-imagem img {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* RODAPÉ */
+
+.rodape {
+  background-color: #22120C;
+  color: #F4E1D0;
+  padding: 40px 60px 45px;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+.rodape-col {
+  flex: 1;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.rodape-col h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+/* RESPONSIVO GERAL – HERO + NOVAS SEÇÕES */
+
+@media (max-width: 980px) {
+  .home-esquerda {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .conteudo-direita img {
+    max-width: 100%;
+  }
+
+  .historia-container {
+    flex-direction: column;
+  }
+
+  .horarios-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cardapio-card {
+    flex-direction: column;
+  }
+
+  .rodape-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-esquerda {
+    padding: 30px 20px;
+    gap: 40px;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .primario-text h5 {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+
+  .primario-text p,
+  .conteudo-direita .descricao {
+    font-size: 1.05em;
+  }
+
+  .localizacao,
+  .contato,
+  .historia,
+  .horarios,
+  .cardapio,
+  .rodape {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .horarios-grid {
+    grid-template-columns: 1fr;
   }
 }

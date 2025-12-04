@@ -33,7 +33,7 @@
 
     <!--CONTEÚDO - ESQUERDA-->
 
-    <section class="home-esquerda">
+    <section id="home" class="home-esquerda">
         <div class="primario-text">
             <h5>COZINHA AFETIVA BRASILEIRA</h5>
             <h1>Sabores que abraçam,<br>tradições que vivem em cada prato</h1>
@@ -47,9 +47,20 @@
             </div>
            
             <div class="botoes">
-                <button class="btn-cardapio">Ver Cardápio do Dia</button>
-                <button class="btn-contato">Reservar/Contato</button>
-            </div>
+            <button
+              class="btn-cardapio"
+              onclick="document.getElementById('cardapio').scrollIntoView({ behavior: 'smooth' })"
+            >
+              Ver Cardápio do Dia
+            </button>
+
+            <button
+              class="btn-contato"
+              onclick="document.getElementById('reserva').scrollIntoView({ behavior: 'smooth' })"
+            >
+              Reservar/Contato
+            </button>
+        </div>
         </div>
 
         <!--CONTEÚDO - DIREITA-->
@@ -68,7 +79,7 @@
 
     <!--SEÇÃO LOCALIZAÇÃO-->
 
-    <section class="localizacao">
+    <section id="localizacao" class="localizacao">
 
         <!-- TEXTO ESQUERDA -->
         <div class="localizacao-texto">
@@ -116,7 +127,7 @@
 
     </section>
 
-        <!-- SEÇÃO CONTATO / RESERVA -->
+    <!-- SEÇÃO CONTATO / RESERVA -->
 
 <section id="reserva" class="contato">
   <div class="contato-container">
@@ -222,6 +233,166 @@
   </div>
 </section>
 
+<!-- 4ª PARTE – NOSSA HISTÓRIA -->
+
+<section id="historia" class="historia">
+  <div class="historia-container">
+    <div class="historia-texto">
+      <span class="historia-label">NOSSA HISTÓRIA</span>
+      <h2>Uma casa que celebra memórias afetivas e sabores de família</h2>
+      <p>
+        Sabores da Vila nasceu das receitas guardadas nos cadernos de dona Helena, que soube acolher
+        a vizinhança, amigos e viajantes em busca de um almoço demorado e conversas sem pressa.
+      </p>
+      <p>
+        Em cada panela há lembranças de infância, cheiros da cozinha da avó e um respeito profundo
+        pelos ingredientes brasileiros. Nossa cozinha combina técnicas contemporâneas com o toque
+        afetivo de uma casa de família.
+      </p>
+      <p>
+        Aqui, cada prato conta uma história: da feira de domingo às receitas do litoral, da horta fresca
+        à mesa farta para compartilhar.
+      </p>
+    </div>
+
+    <aside class="historia-card">
+      <h3>Nossa Filosofia</h3>
+      <p>
+        Acreditamos em uma gastronomia que acolhe, aproxima e faz lembrar de casa — mesmo quando você chega
+        pela primeira vez.
+      </p>
+
+      <div class="historia-pill">
+        <strong>Ingredientes frescos</strong>
+        <span>Produtos sazonais e seleção cuidadosa de pequenos produtores locais.</span>
+      </div>
+
+      <div class="historia-pill">
+        <strong>Experiências afetivas</strong>
+        <span>Ambiente acolhedor, luz suave e atendimento atento em cada detalhe.</span>
+      </div>
+
+      <div class="historia-pill">
+        <strong>Tradição & contemporaneidade</strong>
+        <span>Receitas de família revisitadas com técnica moderna e apresentação delicada.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- 5ª PARTE – HORÁRIOS DE FUNCIONAMENTO -->
+
+<section id="horarios" class="horarios">
+  <div class="horarios-container">
+    <span class="horarios-label">HORÁRIOS DE FUNCIONAMENTO</span>
+    <h2>O calor da nossa cozinha em cada turno</h2>
+    <p class="horarios-sub">
+      Organizamos nossos horários para acolher você em almoços demorados, jantares especiais e encontros em família.
+      Reservas antecipadas são recomendadas para garantir melhor acolhimento.
+    </p>
+
+    <div class="horarios-grid">
+      <article class="dia-card">
+        <h4>SEGUNDA-FEIRA</h4>
+        <strong>11h30 — 22h</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>TERÇA-FEIRA</h4>
+        <strong>Fechado</strong>
+        <p>Nossa equipe descansa neste dia. Reserve nos demais dias para experiências memoráveis.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>QUARTA-FEIRA</h4>
+        <strong>11h30 — 22h</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>QUINTA-FEIRA</h4>
+        <strong>11h30 — 22h</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>SEXTA-FEIRA</h4>
+        <strong>11h30 — 22h</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>SÁBADO</h4>
+        <strong>12h — 23h30</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+
+      <article class="dia-card">
+        <h4>DOMINGO</h4>
+        <strong>12h — 17h</strong>
+        <p>Reservas antecipadas recomendadas para garantir melhor acolhimento.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6ª PARTE – CARDÁPIO DO DIA -->
+
+<section id="cardapio" class="cardapio">
+  <div class="cardapio-container">
+    <span class="cardapio-label">CARDÁPIO DO DIA</span>
+    <h2>Sabores preparados para cada dia da semana</h2>
+    <p class="cardapio-sub">
+      Escolha o dia para descobrir o prato especial criado pela nossa equipe. Ingredientes frescos,
+      receitas afetivas e apresentação impecável para tornar cada visita única.
+    </p>
+
+  <div class="cardapio-tabs">
+    <button onclick="location.href='days/segunda-feira.html'">Segunda-feira</button>
+    <button onclick="location.href='days/terca-feira.html'">Terça-feira</button>
+    <button onclick="location.href='days/quarta-feira.html'">Quarta-feira</button>
+    <button onclick="location.href='days/quinta-feira.html'">Quinta-feira</button>
+    <button onclick="location.href='days/sexta-feira.html'">Sexta-feira</button>
+    <button onclick="location.href='days/sabado.html'">Sábado</button>
+    <button onclick="location.href='days/domingo.html'">Domingo</button>
+  </div>
+
+    <div class="cardapio-card">
+      <div class="cardapio-texto">
+        <span class="cardapio-chip">Prato do dia</span>
+        <h3>Macarrão à Parmegiana</h3>
+        <p>
+          Nosso macarrão de forno, com queijo gratinado e molho de tomate rústico, recebe um toque
+          especial de ervas frescas da horta. Acompanhado de salada de folhas e pão da casa.
+        </p>
+        <p class="cardapio-preco">R$ 36,00</p>
+      </div>
+      <div class="cardapio-imagem">
+        <img src="https://img.freepik.com/premium-photo/pasta-bake-with-sausage-baked-ziti-italian-recipe-italian-food-cuisine_198067-3984.jpg" alt="Prato do dia - Macarrão à Parmegiana">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ SIMPLES -->
+
+<footer class="rodape">
+  <div class="rodape-container">
+    <div class="rodape-col">
+      <h4>Sabores da Vila</h4>
+      <p>Sabores afetivos, ingredientes frescos e acolhimento de casa. Venha nos visitar e celebrar os sabores da Vila.</p>
+    </div>
+    <div class="rodape-col">
+      <h4>Localização</h4>
+      <p>Rua dos Ateliês da Vila, 145<br>Vila das Artes, Palmas - TO<br>CEP 02052-010</p>
+    </div>
+    <div class="rodape-col">
+      <h4>Contato rápido</h4>
+      <p>+55 (11) 3256-9042<br>+55 (11) 98876-4321<br>reservas@viladossabores.com<br>@viladossabores</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

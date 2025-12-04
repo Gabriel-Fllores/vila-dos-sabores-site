@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9F6F0;
+  font-family: "Source Sans 3", sans-serif;
+  color: #433023;
+}
+
+/* Wrapper principal */
+.cardapio-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 60px 90px;
+}
+
+/* Título topo */
+.cardapio-top-label {
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.35em;
+  font-size: 13px;
+  color: #8C7A67;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cardapio-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+.cardapio-sub {
+  font-size: 16px;
+  color: #7B6A59;
+  max-width: 650px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+/* TABS (dias da semana) */
+
+.day-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.day-tab {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  border-radius: 999px;
+  border: 1px solid #E7D8C8;
+  padding: 8px 18px;
+  background-color: #FFF;
+  color: #7B6A59;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.day-tab:hover {
+  background-color: #FDE3BF;
+  color: #433023;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.day-tab.ativo {
+  background-color: #A3471D;
+  color: #FFFFFF;
+  border-color: #A3471D;
+  box-shadow: 0 8px 18px rgba(163,71,29,0.35);
+}
+
+/* Lista de pratos */
+
+.pratos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Card prato */
+
+.prato-card {
+  display: flex;
+  align-items: stretch;
+  background-color: #FFFFFF;
+  border-radius: 28px;
+  border: 1px solid #F1E4D8;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.prato-texto {
+  flex: 1;
+  padding: 20px 26px;
+}
+
+.prato-label {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #A48463;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.prato-titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  margin: 2px 0 6px;
+}
+
+.prato-desc {
+  font-size: 14px;
+  color: #7B6A59;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.prato-preco {
+  font-size: 15px;
+  font-weight: 700;
+  color: #99431E;
+}
+
+/* Imagem do lado direito */
+
+.prato-imagem {
+  width: 260px;
+  min-height: 150px;
+}
+
+.prato-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cartão “fechado” (terça) */
+
+.fechado-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.fechado-card {
+  background-color: #FFFFFF;
+  border-radius: 36px;
+  border: 1px solid #F1E4D8;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  padding: 60px 40px;
+  max-width: 720px;
+  text-align: center;
+}
+
+.fechado-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Responsivo */
+
+@media (max-width: 900px) {
+  .cardapio-page {
+    padding: 40px 20px 70px;
+  }
+
+  .prato-card {
+    flex-direction: column-reverse;
+  }
+
+  .prato-imagem {
+    width: 100%;
+    height: 180px;
+  }
+}
